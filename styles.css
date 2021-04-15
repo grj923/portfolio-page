@@ -1,18 +1,103 @@
-#main {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 70%;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #efebe2;
+}
+.nav {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ab0552;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list a {
+  display: block;
+  font-size: 3rem;
+  padding: 1rem;
+}
+.nav-list a:hover {
+  background: #b175ff;
 }
 #welcome-section {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: auto;
-  background-color: black;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #07040a;
 }
-#welcome-header {
+h1 {
+  color: #ab0552;
+  font-size: 8rem;
+}
+h2 {
   color: #efebe2;
+  font-size: 5rem;
+}
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.projects-section {
+  text-align: center;
+  padding: 10rem 2 rem;
+  margin: 5rem;
+}
+#my-projects-header {
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #ab0552;
+}
+.grid {
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+.project-title {
+  background-color: #ab0552;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  border: 0.3rem solid black;
+}
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #b175ff;
+  width: 100%;
+  height: 20vh;
+}
+.contact-info {
+  display: block;
+  background-color: #efebe2;
 }
