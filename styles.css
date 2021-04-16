@@ -74,7 +74,6 @@ h2 {
   color: #ab0552;
 }
 .grid {
-  height: 50vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -88,7 +87,16 @@ h2 {
   padding: 1rem;
   border: 0.3rem solid black;
 }
+.project-image {
+  height: 500px;
+  width: 500px;
+}
+.project-header {
+  font-size: 4rem;
+}
+
 #contact {
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
