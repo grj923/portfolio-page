@@ -28,7 +28,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background: #ab0552;
+  background: black;
 }
 .nav-list {
   display: flex;
@@ -48,16 +48,16 @@ a {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #07040a;
-  background-image: linear-gradient(38deg, #7e8386 0%, #212022 100%);
-  border-bottom: 10px solid #ab0552;
+  background-color: #ab0552;
+  background-image: linear-gradient(68deg, #f8bcd8 0%, #ab0552, 100%);
+  border-bottom: 2em solid #07040a;
 }
 h1 {
-  color: #efebe2;
+  color: #07040a;
   font-size: 8rem;
 }
 h2 {
-  color: #efebe2;
+  color: #07040a;
   font-size: 4rem;
 }
 h1,
@@ -95,8 +95,8 @@ h2 {
 }
 .project-header {
   font-size: 3rem;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #portfolio {
@@ -108,11 +108,27 @@ h2 {
   background-color: #b175ff;
   width: 100%;
   height: 20vh;
-  border: 1px solid black;
+  border: 0.5em solid black;
 }
 .profile-link {
-  border-left: 1px solid black;
-  padding-left: 10px;
+  border-left: 0.1em solid black;
+  padding-left: 1em;
   font-size: 2.5rem;
-  margin-left: 5px;
+  margin-left: 1em;
+}
+.profile-link:first-child {
+  border-left: none;
+}
+.profile-link:hover {
+  color: #ab0552;
+}
+.liveButton {
+  background-color: #ab0552;
+  color: #efebe2;
+  height: 2.5em;
+  width: 8em;
+  font-size: 2rem;
+}
+.liveButton:hover {
+  background-color: #b175ff;
 }
