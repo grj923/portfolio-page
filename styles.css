@@ -28,7 +28,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background: black;
+  background: #ab0552;
 }
 .nav-list {
   display: flex;
@@ -48,16 +48,15 @@ a {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #ab0552;
-  background-image: linear-gradient(68deg, #f8bcd8 0%, #ab0552, 100%);
-  border-bottom: 2em solid #07040a;
+  background-image: url(./assests/wallpaperflare.com_wallpaper.jpg);
+  border: 0.8em solid #ab0552;
 }
 h1 {
-  color: #07040a;
+  color: #ab0552;
   font-size: 8rem;
 }
 h2 {
-  color: #07040a;
+  color: #ab0552;
   font-size: 4rem;
 }
 h1,
@@ -65,6 +64,18 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
+
+#profile-link {
+  color: #ab0552;
+  font-size: 4rem;
+}
+#profile-link:hover {
+  color: #b175ff;
+}
+.welcome-title {
+  margin-bottom: 10em;
+}
+
 .projects-section {
   text-align: center;
   padding: 10rem 2 rem;
@@ -82,7 +93,8 @@ h2 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 3rem;
 }
-.project-title {
+
+.project-tile {
   background-color: #efebe2;
   font-size: 1rem;
   text-align: center;
@@ -99,7 +111,7 @@ h2 {
   padding-bottom: 0.5em;
 }
 
-#portfolio {
+#contact {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -110,16 +122,16 @@ h2 {
   height: 20vh;
   border: 0.5em solid black;
 }
-.profile-link {
+.contact-link {
   border-left: 0.1em solid black;
   padding-left: 1em;
   font-size: 2.5rem;
   margin-left: 1em;
 }
-.profile-link:first-child {
+.contact-link:first-child {
   border-left: none;
 }
-.profile-link:hover {
+.contact-link:hover {
   color: #ab0552;
 }
 .liveButton {
