@@ -107,7 +107,7 @@ h2 {
   display: flex;
   flex-direction: column;
   color: #ab0552;
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
 }
 #profile-link:hover {
