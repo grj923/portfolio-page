@@ -14,6 +14,23 @@ html {
   font-size: 70%;
   scroll-behavior: smooth;
 }
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 25%;
+  }
+}
+
 ul {
   list-style: none;
 }
@@ -49,9 +66,10 @@ a {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: url(./assests/wallpaperflare.com_wallpaper.jpg);
-  border: 0.8em solid #ab0552;
+  background: black;
+  border: 0.5em solid #ab0552;
 }
+
 h1 {
   color: #ab0552;
   font-size: 8rem;
@@ -66,17 +84,24 @@ h2 {
   font-weight: bold;
 }
 .welcome-name {
-  margin-top: 20rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
   text-align: center;
   padding-top: 1rem;
 }
+#welcome-image {
+  height: 30rem;
+  width: 60rem;
+  border: 0.5rem solid #b175ff;
+  margin-bottom: 3rem;
+}
+
 #professional-header {
   text-align: center;
   color: #ab0552;
   font-size: 3rem;
-  margin-top: 25rem;
-  margin-bottom: 3rem;
-  border-bottom: 0.25rem solid #b175ff;
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #b175ff;
 }
 #profile-link {
   display: flex;
@@ -102,8 +127,8 @@ h2 {
 .grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
   grid-gap: 3rem;
 }
 
@@ -115,9 +140,23 @@ h2 {
   border: 0.3rem solid #ab0552;
 }
 .project-image {
-  height: 350px;
-  width: 350px;
+  height: 26.5rem;
+  width: 26.5rem;
 }
+@media (max-width: 48em) {
+  .project-image {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .project-image {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
 .project-header {
   font-size: 3rem;
   padding-top: 0.5em;
@@ -128,15 +167,16 @@ h2 {
   position: absolute;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background-color: #b175ff;
   width: 100%;
   height: 20vh;
-  border: 0.5em solid black;
+  border: 0.5rem solid black;
 }
 .contact-link {
-  border-left: 0.1em solid black;
+  border-left: 0.1rem solid black;
   padding-left: 1em;
   font-size: 2.5rem;
   margin-left: 1em;
@@ -153,8 +193,8 @@ h2 {
   height: 2.5em;
   width: 8em;
   font-size: 2.5rem;
-  border: 0.1em solid black;
-  padding: 0.1em;
+  border: 0.1rem solid black;
+  padding: 0.1rem;
 }
 .view:hover {
   background-color: #b175ff;
