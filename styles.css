@@ -14,7 +14,7 @@ html {
   font-size: 70%;
   scroll-behavior: smooth;
 }
-@media (max-width: 75em) {
+@media (max-width: 80em) {
   html {
     font-size: 60%;
   }
@@ -72,15 +72,14 @@ a {
 
 h1 {
   color: #ab0552;
-  font-size: 8rem;
+  font-size: 5rem;
 }
 h2 {
   color: #ab0552;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h1,
 h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 .welcome-name {
